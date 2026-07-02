@@ -287,6 +287,39 @@
     flex-shrink:0;
     margin-top:6px;
   }
+  .upgrade-categories{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:36px;
+    margin-top:12px;
+  }
+  .upgrade-group h4{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    font-size:1.05rem;
+    color:var(--gold-light);
+    margin-bottom:16px;
+    padding-bottom:12px;
+    border-bottom:1px solid var(--line);
+  }
+  .upgrade-group ul{list-style:none;}
+  .upgrade-group li{
+    font-size:13.5px;
+    color:rgba(255,255,255,0.82);
+    padding:9px 0;
+    border-bottom:1px solid rgba(255,255,255,0.06);
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+    align-items:baseline;
+  }
+  .upgrade-group li:last-child{border-bottom:none;}
+  .upgrade-group .yr{
+    font-size:11px;
+    color:var(--gold-light);
+    white-space:nowrap;
+    letter-spacing:0.03em;
+  }
 
   /* ---------- Map ---------- */
   .map-section{background:#fff;}
@@ -372,6 +405,7 @@
     .gallery-grid a{height:180px;}
     .feature-highlights{grid-template-columns:1fr;}
     .feature-list{grid-template-columns:1fr;}
+    .upgrade-categories{grid-template-columns:1fr; gap:28px;}
     .contact-bar-inner{justify-content:center; text-align:center;}
     .agent-id{width:100%; justify-content:center;}
   }
@@ -438,12 +472,48 @@
   </div>
 </section>
 
-<!-- ================= HOMESTEAD URGENCY ================= -->
-<section id="homestead" style="background:var(--navy); color:#fff; padding:56px 0;">
-  <div class="wrap" style="max-width:760px;">
-    <span class="section-eyebrow" style="color:var(--gold-light);">Buyer Timeline</span>
-    <h2 style="color:#fff; font-size:1.5rem; margin-bottom:14px;">Why the homestead exemption timing matters right now</h2>
-    <p style="color:rgba(255,255,255,0.75); font-size:1rem; margin-bottom:0;">Florida's homestead exemption rules are changing, and the timing of your purchase can directly affect your eligibility and future tax savings on a home like this one. If you're planning to make 342 Aurora St your primary residence, it's worth understanding how the pending change applies to your specific closing date — reach out to Dylan below and he'll walk you through it before you write an offer.</p>
+<!-- ================= HIGHLIGHTS & UPGRADES ================= -->
+<section style="background:var(--navy); color:#fff; padding:64px 0;">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-eyebrow" style="color:var(--gold-light);">Peace of Mind</span>
+      <h2 style="color:#fff;">Highlights &amp; Upgrades</h2>
+    </div>
+    <div class="upgrade-categories">
+      <div class="upgrade-group">
+        <h4>Major Systems</h4>
+        <ul>
+          <li>New Roof <span class="yr">2022</span></li>
+          <li>AC Overhaul + New Ductwork <span class="yr">4 Seasons Plan</span></li>
+          <li>Impact Windows Throughout <span class="yr"></span></li>
+          <li>Hurricane Impact Garage Door <span class="yr"></span></li>
+          <li>Updated Bathrooms <span class="yr"></span></li>
+          <li>Gutter Guards Installed <span class="yr"></span></li>
+        </ul>
+      </div>
+      <div class="upgrade-group">
+        <h4>Pool &amp; Backyard</h4>
+        <ul>
+          <li>Pool Resurfaced (Resurrection Finish) <span class="yr">2022</span></li>
+          <li>New Pool Motor <span class="yr">2024</span></li>
+          <li>New Salt Cell System <span class="yr">2024</span></li>
+          <li>Pool Cage Re-Screened <span class="yr">2025</span></li>
+          <li>New Side Patio Pool Entrance <span class="yr"></span></li>
+          <li>Vinyl Privacy Fence <span class="yr">2022</span></li>
+        </ul>
+      </div>
+      <div class="upgrade-group">
+        <h4>Interior &amp; Extras</h4>
+        <ul>
+          <li>Luxury Vinyl Plank Flooring <span class="yr"></span></li>
+          <li>Coastal Kitchen, Raised-Panel Cabinets <span class="yr"></span></li>
+          <li>Indoor Laundry Room <span class="yr"></span></li>
+          <li>Retained Storm Panels <span class="yr"></span></li>
+          <li>Septic Cleaned &amp; Power Washed <span class="yr">2026</span></li>
+          <li>Grill Area, Pool &amp; Rope Lighting <span class="yr"></span></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -551,8 +621,16 @@
       <li>1-car attached garage</li>
       <li>Storage shed in backyard</li>
       <li>Mature landscaping &amp; palms</li>
-      <li>Charlotte County Public Schools</li>
+      <li>Meadow Park / Murdock / Port Charlotte Schools</li>
     </ul>
+
+    <div id="homestead" style="margin-top:64px; padding-top:48px; border-top:1px solid var(--line);">
+      <div class="section-head">
+        <span class="section-eyebrow" style="color:var(--gold-light);">Buyer Timeline</span>
+        <h2 style="color:#fff; font-size:1.5rem;">Why the homestead exemption timing matters right now</h2>
+      </div>
+      <p style="color:rgba(255,255,255,0.75); font-size:1rem; max-width:760px;">Florida's homestead exemption rules are changing, and the timing of your purchase can directly affect your eligibility and future tax savings on a home like this one. If you're planning to make 342 Aurora St your primary residence, it's worth understanding how the pending change applies to your specific closing date — reach out to Dylan below and he'll walk you through it before you write an offer.</p>
+    </div>
   </div>
 </section>
 
